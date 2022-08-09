@@ -1,0 +1,5 @@
+*ckpt
+*JPEG
+*tar.gz
+*.pyc
+src/__pycache__/*
