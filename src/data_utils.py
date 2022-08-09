@@ -31,6 +31,6 @@ def get_imagenet(imagenet_path, train, no_transform=False):
     if no_transform:
         transform = None
     
-    data_path = os.path.join(data_path, 'train' if train else 'val')
+    data_path = os.path.join(imagenet_path, 'train' if train else 'val')
     # data_path = os.path.join(data_path, 'train_fixed_size' if train else 'val_fixed_size')
     return torchvision.datasets.ImageFolder(root=data_path, transform=transform)
